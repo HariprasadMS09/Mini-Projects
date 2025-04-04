@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color:#D4DF9E;
+}
+body{
+    background-color: #12100E;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameBox{
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.gameBoxDivision{
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 5%;
+    font-size: 10vmin;
+    background-color: #D7F9F1;
+}
+#newButton{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #D7F9F1;
+    color: #12100E;
+}
