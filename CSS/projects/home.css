@@ -1,0 +1,166 @@
+/* hnworld.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: black;
+    padding: 20px 0;
+    position: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_section img {
+    max-width: 250px;
+}
+
+.link_section {
+    display: flex;
+    gap: 60px;
+}
+
+.link_item {
+    list-style: none;
+}
+
+.rem_link_style {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.rem_link_style:hover {
+    color: goldenrod;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row_flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo_section {
+        margin-bottom: 20px;
+    }
+
+    .link_section {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .link_item {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    .logo_section img {
+        max-width: 200px;
+    }
+
+    .rem_link_style {
+        font-size: 14px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main content placeholder */
+main {
+    background: black;
+    min-height: 100vh;
+    padding: 20px;
+}
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.banner_main_text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:goldenrod;
+    font-size: 2.2cm;
+}
+.banner_sub_text {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    z-index: 2; /* Ensure it appears above the banner lines */
+}
+
+.banner_subtext_inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner_sub_text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.banner_sub_text a.btn_default {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner_sub_text a.btn_default:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.image_responsive {
+    max-width: 100%;
+    height: auto;
+}
